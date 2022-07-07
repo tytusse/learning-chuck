@@ -1,5 +1,5 @@
 Noise pluck => Delay str => dac;
-str => str;
+str => OneZero filter => str;
 // 100hz at 44.1k sample rate
 441.0 :: samp => str.delay;
 0.98 => str.gain;
